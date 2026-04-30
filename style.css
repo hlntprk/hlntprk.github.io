@@ -1,0 +1,263 @@
+/* ---------------------------------------------------
+   FUNKY RETRO-MODERN DARKER COLOR PALETTE
+--------------------------------------------------- */
+:root {
+    --bg: #fff3f5;        /* slightly darker pinkish base */
+    --text: #222;
+    --accent1: #b73b4c;   /* deep raspberry red */
+    --accent2: #ff8b2f;   /* warm orange */
+    --accent3: #5b3cc4;   /* deep purple (name + headings) */
+    --accent4: #28b5a0;   /* teal mint */
+    --card: #ffffff;
+    --border: #e8c3cc;
+  }
+  
+  /* ---------------------------------------------------
+     GLOBAL STYLES
+  --------------------------------------------------- */
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    margin-top: 0;
+    color: var(--accent3);
+  }
+  
+  a {
+    color: var(--accent1);
+    text-decoration: none;
+    transition: 0.25s ease;
+  }
+  a:hover {
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+  }
+  
+  /* ---------------------------------------------------
+     HEADER (darker + gradient)
+  --------------------------------------------------- */
+  header {
+    background: linear-gradient(90deg, #f7c6d0, #fbe3b4);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  nav h1 {
+    color: var(--accent3);
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+  }
+  
+  nav ul li {
+    font-weight: 600;
+    color: var(--accent1);
+    transition: 0.25s ease;
+  }
+  nav ul li:hover {
+    transform: scale(1.1);
+    color: var(--accent3);
+  }
+  
+  /* ---------------------------------------------------
+     HERO SECTION (darker, more vivid)
+  --------------------------------------------------- */
+  #hero {
+    text-align: center;
+    padding: 7rem 2rem;
+    background: linear-gradient(135deg, #ffd5dc, #fdd6a1, #dec8ff);
+    border-bottom: 2px solid #f0b8c2;
+    animation: heroFade 1.4s ease;
+  }
+  
+  #hero h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent3), var(--accent1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-links {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  @keyframes heroFade {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* ---------------------------------------------------
+     CONTENT SECTIONS
+  --------------------------------------------------- */
+  .content-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .content-section h3 {
+    font-size: 1.9rem;
+    background: linear-gradient(90deg, var(--accent3), var(--accent1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: titleDrop 0.8s ease;
+  }
+  
+  @keyframes titleDrop {
+    from { opacity: 0; transform: translateY(-10px);}
+    to   { opacity: 1; transform: translateY(0);}
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Profile Image */
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f6b7ca;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* ---------------------------------------------------
+     CARD GRID
+  --------------------------------------------------- */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    padding: 1.8rem;
+    border-radius: 14px;
+    transition: 0.35s ease;
+    opacity: 0;
+    transform: translateY(35px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    position: relative;
+  }
+  
+  /* Hover pop + colored accent underline */
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent1);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  
+  .card:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--accent1), var(--accent4));
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Reveal animation */
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ---------------------------------------------------
+     SKILLS GRID
+  --------------------------------------------------- */
+  .skills-grid {
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .skills-grid h4 {
+    margin-bottom: 0.5rem;
+    color: var(--accent2);
+  }
+  
+  /* ---------------------------------------------------
+     FOOTER (darker + warm gradient)
+  --------------------------------------------------- */
+  footer {
+    text-align: center;
+    background: linear-gradient(90deg, #ffd1df, #ffe9c3);
+    padding: 3rem 1rem;
+    color: #444;
+    margin-top: 3rem;
+    border-top: 2px solid #f2b4c8;
+  }
+  
+  footer a {
+    color: var(--accent3);
+    font-weight: 600;
+  }
+  
+  footer a:hover {
+    color: var(--accent1);
+  }
+  
+  footer .copyright {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  /* ---------------------------------------------------
+     RESPONSIVE
+  --------------------------------------------------- */
+  @media (max-width: 700px) {
+    nav ul {
+      display: none;
+    }
+  
+    #hero {
+      padding: 4rem 1.5rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-bottom: 1rem;
+    }
+  }
+  
