@@ -335,8 +335,9 @@
 /* Real screenshot image — shown when you replace placeholders */
 .visual-card img {
   width: 100%;
-  height: 200px;
+  height: 240px;   /* was 200px — increase to show more of the dashboard */
   object-fit: cover;
+  object-position: top;  /* add this so it shows the top of the image, not the middle */
   display: block;
 }
 
