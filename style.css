@@ -260,4 +260,106 @@
       margin-bottom: 1rem;
     }
   }
+/* ---------------------------------------------------
+   COURSE CARDS
+--------------------------------------------------- */
+.course-tag {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--accent3), var(--accent4));
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.course-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* ---------------------------------------------------
+   SECTION SUBTITLE
+--------------------------------------------------- */
+.section-subtitle {
+  color: #666;
+  font-size: 0.97rem;
+  margin-bottom: 2.5rem;
+  max-width: 680px;
+}
+
+/* ---------------------------------------------------
+   DATA VISUALS GRID
+--------------------------------------------------- */
+.visuals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.visual-card {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  transition: 0.35s ease;
+}
+
+.visual-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+  border-color: var(--accent4);
+}
+
+/* Placeholder — remove once you add real screenshots */
+.visual-placeholder {
+  background: linear-gradient(135deg, #f0e8ff, #ffe0ec);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+
+.visual-placeholder .placeholder-icon {
+  font-size: 2.5rem;
+}
+
+/* Real screenshot image — shown when you replace placeholders */
+.visual-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.visual-caption {
+  padding: 1.2rem 1.5rem;
+}
+
+.visual-caption h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.visual-caption p {
+  margin: 0.2rem 0;
+  font-size: 0.88rem;
+  color: #555;
+}
+
+.visual-caption p:first-of-type {
+  color: var(--accent4);
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
   
