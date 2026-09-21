@@ -169,9 +169,7 @@
 
 .content-section h3 {
     font-size: 1.9rem;
-    background: linear-gradient(90deg, var(--accent3), var(--accent1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #943b79;
     margin-bottom: 1.5rem;
     position: relative;
     animation: titleDrop 0.8s ease;
