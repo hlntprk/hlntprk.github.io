@@ -288,7 +288,8 @@
   color: #666;
   font-size: 0.97rem;
   margin-bottom: 2.5rem;
-  max-width: 680px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* ---------------------------------------------------
