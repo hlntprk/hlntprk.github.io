@@ -39,7 +39,7 @@
   }
 
   a {
-    color: var(--accent1);
+    color: #6b807c;
     text-decoration: none;
     transition: 0.25s ease;
   }
