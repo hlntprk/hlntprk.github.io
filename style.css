@@ -154,6 +154,10 @@
   text-justify: inter-word;
 }
 
+  .card p {
+    text-align: left;
+  }
+
 .content-section h3 {
     font-size: 1.9rem;
     background: linear-gradient(90deg, var(--accent3), var(--accent1));
