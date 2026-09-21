@@ -304,21 +304,25 @@
 /* ---------------------------------------------------
    VIDEO EMBEDS
 --------------------------------------------------- */
-.video-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 1rem 0;
+.media-showcase {
+  margin-top: 3rem;
 }
 
-.video-item + .video-item {
-  margin-top: 0.5rem;
+.media-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .video-label {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.5rem;
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--accent4);
   text-transform: uppercase;
   letter-spacing: 0.5px;
