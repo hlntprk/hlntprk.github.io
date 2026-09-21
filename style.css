@@ -33,7 +33,11 @@
     margin-top: 0;
     color: var(--accent3);
   }
-  
+
+  h4 {
+    color: #ad627b;
+  }
+
   a {
     color: var(--accent1);
     text-decoration: none;
