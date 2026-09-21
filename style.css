@@ -21,6 +21,10 @@
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
     scroll-behavior: smooth;
   }
   
