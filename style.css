@@ -139,18 +139,14 @@
   }
 
   .content-section:not(:first-of-type)::before {
-    content: "•••";
+    content: "";
     display: block;
-    text-align: center;
-    font-size: 1.1rem;
-    letter-spacing: 0.6em;
-    margin: 0 0 3rem;
+    width: 340px;
+    height: 5px;
+    margin: 0 auto 3rem;
+    border-radius: 999px;
     background: linear-gradient(90deg, var(--accent3), var(--accent1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--accent1);
-    opacity: 0.6;
+    opacity: 0.35;
   }
 
   #about::before {
