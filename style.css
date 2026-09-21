@@ -63,7 +63,7 @@
   }
   
   nav h1 {
-    color: #ffd5dc;
+    color: #dec8ff;
     font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: 0.7px;
@@ -82,7 +82,7 @@
   }
 
   nav ul li a {
-    color: #dec8ff;
+    color: #ffd5dc;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
     transition: 0.25s ease;
   }
