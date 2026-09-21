@@ -44,7 +44,7 @@
      HEADER (darker + gradient)
   --------------------------------------------------- */
   header {
-    background: linear-gradient(90deg, rgba(114,60,166,0.6), rgba(183,59,76,0.6));
+    background: linear-gradient(90deg, rgba(114,60,166,0.82), rgba(183,59,76,0.82));
     backdrop-filter: blur(22px) saturate(180%);
     -webkit-backdrop-filter: blur(22px) saturate(180%);
     padding: 1rem 2rem;
@@ -143,6 +143,10 @@
     border-radius: 999px;
     background: linear-gradient(90deg, var(--accent3), var(--accent1));
     opacity: 0.35;
+  }
+
+  #about::before {
+    content: none;
   }
 
   .content-section p {
