@@ -122,7 +122,12 @@
     margin: 0 auto;
   }
   
-  .content-section h3 {
+  .content-section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.content-section h3 {
     font-size: 1.9rem;
     background: linear-gradient(90deg, var(--accent3), var(--accent1));
     -webkit-background-clip: text;
