@@ -44,12 +44,14 @@
      HEADER (darker + gradient)
   --------------------------------------------------- */
   header {
-    background: linear-gradient(90deg, #f7c6d0, #fbe3b4);
+    background: linear-gradient(90deg, rgba(114,60,166,0.82), rgba(183,59,76,0.82));
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   }
   
   nav {
@@ -61,26 +63,35 @@
   }
   
   nav h1 {
-    color: var(--accent3);
+    color: #fff;
     font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: 0.7px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
   }
-  
+
   nav ul {
     list-style: none;
     display: flex;
     gap: 1.8rem;
   }
-  
+
   nav ul li {
     font-weight: 600;
-    color: var(--accent1);
     transition: 0.25s ease;
   }
+
+  nav ul li a {
+    color: rgba(255,255,255,0.92);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+  }
+
   nav ul li:hover {
     transform: scale(1.1);
-    color: var(--accent3);
+  }
+  nav ul li:hover a {
+    color: var(--accent2);
   }
   
   /* ---------------------------------------------------
