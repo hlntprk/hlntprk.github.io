@@ -344,8 +344,16 @@
 /* ---------------------------------------------------
    VIDEO EMBEDS
 --------------------------------------------------- */
+.mini-divider {
+  text-align: center;
+  color: var(--accent1);
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  opacity: 0.6;
+}
+
 .media-showcase {
-  margin-top: 4.5rem;
+  margin-top: 1.5rem;
 }
 
 .media-subtitle {
