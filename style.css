@@ -346,9 +346,14 @@
 --------------------------------------------------- */
 .mini-divider {
   text-align: center;
-  color: var(--accent1);
-  font-size: 1.4rem;
   margin-top: 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.6em;
+  background: linear-gradient(90deg, var(--accent3), var(--accent1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent1);
   opacity: 0.6;
 }
 
