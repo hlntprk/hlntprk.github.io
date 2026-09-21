@@ -305,27 +305,27 @@
    VIDEO EMBEDS
 --------------------------------------------------- */
 .media-showcase {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .media-subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.3rem;
 }
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 520px;
 }
 
 .video-label {
   margin: 0 0 0.5rem;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 1.05rem;
   color: var(--accent4);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   text-align: left;
 }
 
