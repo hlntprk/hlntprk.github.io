@@ -127,6 +127,10 @@
     font-size: 1rem;
     opacity: 0.9;
   }
+
+  .hero-links a {
+    color: #ad627b;
+  }
   
   @keyframes heroFade {
     from { opacity: 0; transform: translateY(20px); }
