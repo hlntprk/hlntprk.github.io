@@ -6,7 +6,7 @@
     --text: #222;
     --accent1: #b73b4c;   /* deep raspberry red */
     --accent2: #ff8b2f;   /* warm orange */
-    --accent3: #5b3cc4;   /* deep purple (name + headings) */
+    --accent3: #723ca6;   /* soft purple (name + headings) */
     --accent4: #28b5a0;   /* teal mint */
     --card: #ffffff;
     --border: #e8c3cc;
@@ -61,7 +61,7 @@
   }
   
   nav h1 {
-    color: #723ca6;
+    color: var(--accent3);
     font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: 0.7px;
